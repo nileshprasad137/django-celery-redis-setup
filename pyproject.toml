@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "django-celery-redis"
+version = "0.1.0"
+description = "simple demo project to demonstrate celery as queues and redis as broker in a django based project."
+authors = ["Nilesh prasad <nileshprasad137@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^5.0"
+djangorestframework = "^3.14.0"
+celery = "^5.3.6"
+redis = "^5.0.1"
+mypy = "^1.8.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
