@@ -1,5 +1,6 @@
 import time
-from .celery import app
+from django_celery_redis.mq import app
+
 
 @app.task
 def send_email_simulation(email_address, subject, message):
