@@ -1,4 +1,4 @@
-This is a simple demonstration of backend architecture with Django as the application server, Celery as distributed task queues and Redis as a message broker. 
+This is a simple demonstration of backend architecture with Django as the application server and Redis as a message broker for Celery. 
 
 In order to run this, you would need to have docker installed.
 
