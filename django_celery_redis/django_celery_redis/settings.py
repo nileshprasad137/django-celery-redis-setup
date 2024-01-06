@@ -129,8 +129,8 @@ CELERY_BROKER_URL = 'redis://redis:6379/0'
 CELERY_RESULT_BACKEND = 'redis://redis:6379/0'
 CELERY_TASK_DEFAULT_QUEUE = 'default'
 
-CELERY_TASK_QUEUES = (
-    Queue('default', routing_key='default'),
-    Queue('high_priority', routing_key='high.#'),
-    Queue('low_priority', routing_key='low.#'),
-)
+CELERY_TASK_QUEUES = {
+    'default': {'exchange': 'default', 'routing_key': 'default'},
+    'high_priority': {'exchange': 'high_priority', 'routing_key': 'high_priority'},
+    'low_priority': {'exchange': 'low_priority', 'routing_key': 'low_priority'},
+}
